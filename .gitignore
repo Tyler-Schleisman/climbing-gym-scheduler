@@ -1,3 +1,37 @@
+# Dependencies (DO NOT UPLOAD - can be recreated with npm install)
 node_modules/
-dist/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production builds (DO NOT UPLOAD - can be recreated with npm run build)
+/build
+/dist
+
+# Environment variables (DO NOT UPLOAD - may contain secrets!)
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs (not useful on GitHub)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# IDE settings (personal preferences, not needed by others)
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files (Mac/Windows system files)
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
