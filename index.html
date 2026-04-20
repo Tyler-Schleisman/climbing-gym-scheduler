@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Climbing Gym Scheduler</title>
+    <style>
+      /* ── Global resets & base styles ── */
+      *, *::before, *::after { box-sizing: border-box; }
+      html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.5;
+        color: #f1f5f9;
+        background: #0f172a;
+        overflow-x: hidden;
+      }
+      /* ── Focus visible ring (accessibility) ── */
+      :focus-visible {
+        outline: 2px solid #60a5fa;
+        outline-offset: 2px;
+        border-radius: 4px;
+      }
+      :focus:not(:focus-visible) { outline: none; }
+      /* ── Button resets ── */
+      button {
+        font-family: inherit;
+        line-height: 1.5;
+        border: none;
+        background: none;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+      }
+      button:disabled { cursor: not-allowed; opacity: 0.5; pointer-events: none; }
+      /* ── Button interaction states ── */
+      button:not(:disabled) {
+        transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease, opacity 0.15s ease;
+      }
+      button:not(:disabled):hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      }
+      button:not(:disabled):active {
+        transform: scale(0.98);
+        box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+      }
+      /* ── Minimum touch targets ── */
+      button, [role="button"], a { min-height: 32px; }
+      /* ── Scrollbar styling ── */
+      ::-webkit-scrollbar { width: 6px; height: 6px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 3px; }
+      ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
+      /* ── Inputs ── */
+      input, select, textarea {
+        font-family: inherit;
+        line-height: 1.5;
+        color: inherit;
+      }
+      input:focus, select:focus, textarea:focus {
+        outline: none;
+        border-color: #60a5fa !important;
+        box-shadow: 0 0 0 3px rgba(96,165,250,0.15);
+      }
+      /* ── Selection ── */
+      ::selection { background: rgba(96,165,250,0.3); color: #fff; }
+      /* Removed global * transition rule — it breaks CSS keyframe animations */
+      /* ── Table resets ── */
+      table { border-collapse: collapse; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

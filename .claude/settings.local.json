@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell.exe -Command \"where.exe node; where.exe npm; where.exe npx\")",
+      "Bash(powershell.exe:*)",
+      "Bash(FNM=\"/c/Users/TylerSchleisman/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/fnm.exe\")",
+      "Bash(\"$FNM\" install --lts)",
+      "Bash(\"$FNM\" use --install-if-missing lts)",
+      "Bash(npm create vite@latest:*)",
+      "Bash(npm run:*)",
+      "Bash(npx vite:*)",
+      "Bash(cd C:/Users/TylerSchleisman/climbing-scheduler && node test-auto-schedule.mjs 2>&1)",
+      "Bash(grep -r \"color:\\\\|background:\\\\|rgba\\\\|#[0-9a-f]\" /c/Users/TylerSchleisman/climbing-scheduler/src/components/*.jsx | head -100)",
+      "Bash(grep -r \"color\\\\|background\\\\|theme\" /c/Users/TylerSchleisman/climbing-scheduler/src/*.jsx 2>/dev/null | head -50)",
+      "Bash(find /c/Users/TylerSchleisman/climbing-scheduler -type f -name \"*.js\" -o -name \"*.jsx\" -o -name \"*.json\" | grep -E \"\\\\.\\(js|jsx|json\\)$\" | head -30)",
+      "Bash(npm install:*)",
+      "Bash(curl -s http://localhost:5174/ | head -50)",
+      "Bash(curl -s http://localhost:5174/src/App.jsx 2>&1 | head -5)",
+      "Bash(tasklist 2>/dev/null | grep -i node || echo \"Can't list processes\")",
+      "Bash(find /c/Users/TylerSchleisman/climbing-scheduler/src -type f \\\\\\( -name \"*.js\" -o -name \"*.jsx\" \\\\\\) | xargs grep -l \"rotation\\\\|section.*age\\\\|section.*reset\" | head -20)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
